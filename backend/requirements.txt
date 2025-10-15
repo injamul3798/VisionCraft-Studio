@@ -1,0 +1,23 @@
+# FastAPI and server
+fastapi
+uvicorn
+python-multipart
+
+# Database
+sqlalchemy
+aiomysql
+pymysql
+cryptography
+alembic
+
+# Pydantic
+pydantic
+pydantic-settings
+
+# Google Gemini AI
+google-generativeai
+
+# Utilities
+python-dotenv
+aiofiles
+
