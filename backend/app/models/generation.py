@@ -18,7 +18,7 @@ class Generation(Base):
 
     id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
     project_id = Column(String(36), ForeignKey("projects.id", ondelete="CASCADE"), nullable=False)
-    html_content = Column(Text, nullable=True)
+    html_content = Column(Text, nullable=True)  # Stores JSON with file structure for React/TS projects
     status = Column(Enum(GenerationStatus), default=GenerationStatus.GENERATING, nullable=False)
     version = Column(Integer, nullable=False, default=1)
     created_at = Column(DateTime, default=datetime.utcnow, nullable=False)
