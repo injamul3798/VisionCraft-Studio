@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { Toaster } from './toastConfig'
 import { ProjectsPage } from './pages/ProjectsPage'
 import { GenerationPage } from './pages/GenerationPage'
 
@@ -17,6 +18,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
+        <Toaster position="top-right" />
         <Routes>
           <Route path="/" element={<ProjectsPage />} />
           <Route path="/projects/:projectId/generate" element={<GenerationPage />} />

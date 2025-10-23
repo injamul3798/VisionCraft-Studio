@@ -14,7 +14,7 @@ class Settings(BaseSettings):
 
     # Gemini AI
     GEMINI_API_KEY: str
-    GEMINI_MODEL: str = "gemini-2.0-flash-exp"
+    GEMINI_MODEL: str = "gemini-2.0-flash-exp"  # Original model that was working
 
     # Server
     HOST: str = "0.0.0.0"
